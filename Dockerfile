@@ -9,7 +9,7 @@ WORKDIR /root
 # Download Ryu source code and install
 RUN apt-get update && \
     apt-get install -qy --no-install-recommends python-setuptools python-pip \
-        python-eventlet python-lxml python-msgpack curl && \
+        python-eventlet python-lxml python-msgpack vim && \
     rm -rf /var/lib/apt/lists/* && \
     curl -kL https://github.com/osrg/ryu/archive/master.tar.gz | tar -xvz && \
     mv ryu-master ryu && \
